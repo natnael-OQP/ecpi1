@@ -1,0 +1,146 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    list-style: none;
+}
+
+header{
+    height: 60px;
+    background-color:#2799FA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+.logo p{
+    letter-spacing: .03rem;
+    text-align: center;
+    margin-top:1rem;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+nav{
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.contact p{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .02rem;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    margin-right: 2rem;
+}
+.btn{
+    font-family: 'Montserrat', sans-serif;
+    padding: .2rem .5rem;
+    font-size: .7rem;
+    border: 1px solid #fff;
+    margin-right: .5rem;
+    font-weight: 500;
+    border-radius: 3px;
+}
+.btn-login{
+    background-color: #fff;
+    color: #0a8bfc;
+}
+.btn-signup{
+    color: #fff;
+}
+/* main */
+.main{
+    padding: 0 .6rem;
+    max-width: 600px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+/* .search-bar */
+.search-bar{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0px;
+}
+.input{
+    width:100%;
+    height: 30px;
+}
+.input input{
+    padding-left: .4rem;
+    font-size: .8rem;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(14, 13, 13, 0.904);
+    width: 100%;
+    height: 100%;
+    border: 1px solid #333;
+}
+.search-btn{
+    width:75px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    background-color:#0a8bfc;
+    color: #fff;
+}
+/* discussion-container */
+.discussion-container{
+    display: flex;
+    flex-direction: column;
+}
+.discussion{
+    margin: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+}
+/* discussion-nav-bar */
+.discussion-nav-bar{
+    background-color:#2799FA;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+}
+/* profile */
+.profile{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+.img{
+    margin-left: .7rem;
+    margin-right: .3rem;
+    width: 40px;
+    height: 40px;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: cover;
+    border-radius: 50%;
+}
+/* user */
+.user .username, .title{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+.username{
+    font-size: 1rem;
+    font-weight: lighter;
+}
+.title{
+    font-size: .8rem;
+}
