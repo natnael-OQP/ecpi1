@@ -9,6 +9,7 @@
 }
 
 header{
+    width:100%;
     height: 60px;
     background-color:#2799FA;
     display: flex;
@@ -17,6 +18,9 @@ header{
     color: #fff;
     padding: 0 2rem;
     overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    position: fixed;
+    z-index: 100;
 }
 .logo p{
     letter-spacing: .03rem;
@@ -39,6 +43,7 @@ nav{
     margin-right: 2rem;
 }
 .btn{
+    cursor: pointer;
     font-family: 'Montserrat', sans-serif;
     padding: .2rem .5rem;
     font-size: .7rem;
@@ -56,8 +61,8 @@ nav{
 }
 /* main */
 .main{
-    padding: 0 .6rem;
-    max-width: 600px;
+    /* padding: 0 .6rem; */
+    max-width: 610px;
     margin: 0px auto;
     display: flex;
     flex-direction: column;
@@ -100,6 +105,7 @@ nav{
     flex-direction: column;
 }
 .discussion{
+    box-shadow: 1px 2px 15px rgba(0,0,0,0.2);
     margin: 1.5rem 0;
     display: flex;
     flex-direction: column;
@@ -112,6 +118,8 @@ nav{
     justify-content: space-between;
     height: 50px;
     width: 100%;
+    margin-bottom: 1rem;
+    position: relative;
 }
 /* profile */
 .profile{
@@ -143,4 +151,48 @@ nav{
 }
 .title{
     font-size: .8rem;
+}
+.category{
+    position: absolute;
+    top: -12px;
+    right: -16px;
+    background-color: #fff;
+    box-shadow: 1px 2px 4px rgba(31, 49, 77, 0.411);
+    font-size: .9rem;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 0px;
+    padding: .3rem .4rem;
+    
+}
+                                                        /* discussion */
+.discussion-info{
+    /* background-color: #d6e9fa; */
+    padding: 1rem 1rem .5rem;
+}
+.discussion-title{
+    color: #2799FA;
+    font-weight: lighter;
+    font-size: 1rem;
+    letter-spacing:.05rem;
+    font-family: 'Baloo Tammudu 2', Arial, Helvetica, sans-serif;
+    margin: 1rem 0;
+}
+.discussion-img{
+    padding:.5rem .5rem;
+    width: 450px;
+    height:450px;
+    margin: 0px auto;
+}
+.discussion-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.discussion-text{
+    padding:.5rem .5rem;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .04rem;
+    font-size: .9rem;
+    line-height: 1.1rem;
+    font-weight: lighter;
 }
