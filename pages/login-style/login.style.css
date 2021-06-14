@@ -1,0 +1,201 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    list-style: none;
+    font-size: 1rem;
+}
+.login-container{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: #f1f1f1;
+}
+header{
+    width:100%;
+    height: 60px;
+    background-color:#2799FA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 0 2rem;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    position: fixed;
+    z-index: 100;
+}
+.logo p{
+    letter-spacing: .03rem;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-family: 'Open Sans',sans-serif;
+}
+.btn{
+    cursor: pointer;
+    font-family:'Open Sans',sans-serif;
+    padding: .2rem .5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 1px solid #fff;
+    margin-right: .5rem;
+    font-weight: 500;
+    border-radius: 3px;
+}
+.btn-signup{
+    color: #fff;
+}
+.banner-wrapper{
+    width: 100%;
+    height:100%;
+    padding :2rem;
+    display: flex;
+}
+.banner-left,.banner-right{
+    min-width: 50%;
+    flex: 1 1 auto;
+    height:100%;
+    position: relative;
+}
+.banner-right{
+    border-left: 1px solid #333;
+}
+.form-container,.text{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    width: 650px;
+    height: 650px;
+}
+.form-container{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:flex-start;
+    padding-top: 1rem;
+}
+.svg{
+    width: 320px;
+    height: 320px;
+}
+.svg img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-direction:column;
+}
+.row{
+    width:350px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.row .label label {
+    color: #1691fd;
+    font-weight: 600;
+    letter-spacing: .03rem;
+    text-transform: capitalize;
+    font-size: .9rem;
+}
+.row input{
+    display:flex;
+    width: 100%;
+    height: 35px;
+    margin-top: .5rem;
+    border: 1px solid #2799FA;
+    border-radius: 5px;
+    color: #2799FA;
+    padding: .4rem .5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing:.03rem;
+    font-family: 'Open Sans',sans-serif;
+}
+.row .input{
+    padding-left: .4rem;
+}
+input::placeholder{
+    color: #2799FA;
+}
+.remember-section{
+    width: 350px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-direction: row;
+}
+.remember-me{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    height: 35px;
+}
+.remember-me label{
+    padding: .5rem;
+    margin-top:.3rem;
+    /* font-size:1rem; */
+    font-weight: 600;
+    letter-spacing:.03rem;
+    font-family: 'Open Sans',sans-serif;
+    color: #2799FA;
+    
+}
+#remember{
+    width: 23px;
+    height: 23px;
+    padding: 0rem;
+}
+.forgot-password a{
+    font-weight: 600;
+    letter-spacing:.03rem;
+    font-family: 'Open Sans',sans-serif;
+    color: #2799FA;   
+}
+#submit{
+    margin-top: 1rem;
+    cursor: pointer;
+    font-family: 'Open Sans',sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:210px;
+    height:52px;
+    background-color: #2799FA;
+    box-shadow:1px 2px 8px rgba(0,0,0,0.5);
+    font-size:1.4rem;
+    color: #fff;
+    transition: all 0.5s ease;
+    letter-spacing:.04rem;
+}
+#submit:hover{
+    transform: translateY(-3px);
+    box-shadow:1px 2px 4px rgba(0,0,0,0.6);
+}
+.banner-right .text{
+    padding-left: 2rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 2.2rem;
+    text-transform:capitalize;
+    font-weight: 600;
+    letter-spacing:.03rem;
+    font-family: 'Open Sans',sans-serif;
+}

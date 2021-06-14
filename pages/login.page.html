@@ -4,9 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--fonts  -->
+    <!-- header-font-family -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- end -->
+    <link rel="stylesheet" href="/pages/login-style/login.style.css">
     <title>login</title>
 </head>
 <body>
-    <h1>Login Page</h1>
+   <div class="login-container">
+        <header>
+            <div class="logo"> <p>epci</p> </div>
+            <div class="btn-container">
+                <li>
+                    <a href="/pages/signup.page.html" class="btn btn-signup">sign up</a>
+                </li>
+            </div>
+        
+        </header>
+        <!-- banner -->
+        <div class="banner-wrapper">
+            <div class="banner-left">
+                <div class="form-container">
+                    <!-- svg icon -->
+                    <div class="svg">
+                        <img src="/pages/login-style/img/undraw_Access_account_re_8spm.svg" alt="">
+                    </div>
+                    <!-- form -->
+                    <form action="" class="form" >
+                        <!-- email-section -->
+                        <div class="row">
+                            <div class="label">
+                                <label for="email">E-mail:</label>
+                            </div>                            
+                            <div class="input">
+                                <input type="email" placeholder="email" name="email" required>
+                            </div>                            
+                        </div>
+                        <!-- password-section -->
+                        <div class="row">
+                            <div class="label">
+                                <label for="password">Password:</label>
+                            </div>                            
+                            <div class="input">
+                                <input type="password" placeholder="password" name="password" >
+                            </div>                            
+                        </div>
+                        <!-- remember me section -->
+                        <div class="row remember-section">
+                            <div class="remember-me">
+                                <input type="checkbox" id="remember" name="remember" value="yes-remember-me">
+                                <label for="remember">Remember-me</label>
+                            </div>                            
+                            <div class="forgot-password">
+                                <a href="#">forgot-password?</a>
+                            </div>                            
+                        </div>
+                        <!-- button  section -->
+                        <button type="submit" id="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="banner-right">
+                <div class="text">
+                    A wonderful serenity has taken over my whole soul, like the sweet spring mornings 
+                    that I enjoy with all my heart.
+                </div>
+            </div>
+        </div>
+
+   </div>
 </body>
 </html>
